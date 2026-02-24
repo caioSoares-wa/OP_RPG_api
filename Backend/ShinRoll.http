@@ -1,0 +1,6 @@
+@ShinRoll_HostAddress = http://localhost:5287
+
+GET {{ShinRoll_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
