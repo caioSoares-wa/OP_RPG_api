@@ -15,9 +15,6 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-var connectionString = "Host=localhost;Port=5432;Database=shinroll;Username=postgres;Password=*Ker8Z4ILM";
-builder.Services.AddDbContext<AppDbContextPOSTGRES>(options =>
-    options.UseNpgsql(connectionString));
 
 var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
 
